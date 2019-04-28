@@ -1,0 +1,27 @@
+{
+  "name": "letsypify",
+  "version": "1.0.0",
+  "description": "the letstypify.com website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisz/letstypify.git"
+  },
+  "keywords": [
+    "type",
+    "typify",
+    "typescript",
+    "inference",
+    "infer",
+    "automatic"
+  ],
+  "author": "Cristian Traina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crisz/letstypify/issues"
+  },
+  "homepage": "https://github.com/crisz/letstypify#readme"
+}
