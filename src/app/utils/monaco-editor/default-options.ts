@@ -3,8 +3,6 @@ export const MONACO_DEFAULT_OPTIONS = {
     scrollBeyondLastLine: false,
     minimap: {
       enabled: false
-    },
-    language: 'json',
-    validate: true
+    }
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TypifierService } from '../../services/typifier.service';
 
 @Component({
   selector: 'lt-source-textarea',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SourceTextareaComponent implements OnInit {
 
-  editorOptions = {language: 'javascript'};
-  code: string= 'function x() {\nconsole.log("Hello world!");\n}';
+  editorOptions = {language: 'json'};
+  code: string = '{"title": "Hello world!"}';
 
-  constructor() { }
+  constructor(public typifierService: TypifierService) { }
+
+  sourceChange(evt) {
+    this.typifierService.update(evt);
+  }
 
   ngOnInit() {
   }
