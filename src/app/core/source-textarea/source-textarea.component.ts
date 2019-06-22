@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SourceTextareaComponent implements OnInit {
 
+  editorOptions = {language: 'javascript'};
+  code: string= 'function x() {\nconsole.log("Hello world!");\n}';
+
   constructor() { }
 
   ngOnInit() {
